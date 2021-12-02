@@ -51,7 +51,8 @@ button:focus,
     border: solid #9d1414 1rem;
     border-radius: 30px 40px 30px 30px;
     list-style-type: none;
-    padding: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     box-shadow: 0 0 10px #fff;
     display: flex;
     grid-gap: 15px;
