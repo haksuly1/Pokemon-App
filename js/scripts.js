@@ -1,12 +1,12 @@
 let pokemonRepository = (function() {
   let pokemonList = [];
-  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
 
   function add(pokemon) {
-    if (typeof pokemon === 'object' && 'name' in pokemon) {
+    if (typeof pokemon === "object" && "name" in pokemon) {
       pokemonList.push(pokemon);
     } else {
-      console.log('pokemon is not correct');
+      console.log("pokemon is not correct");
     }
   }
 
@@ -15,20 +15,20 @@ let pokemonRepository = (function() {
   }
 
   function addListItem(pokemon) {
-    let pokemonList = document.querySelector('.pokemon-list');
-    let listPokemon = document.createElement('li');
-    listPokemon.classList.add('group-list-item');
+    let pokemonList = document.querySelector(".pokemon-list");
+    let listPokemon = document.createElement("li");
+    listPokemon.classList.add("group-list-item");
 
-    let button = document.createElement('button');
+    let button = document.createElement("button");
     button.innerText = pokemon.name;
-    button.classList.add('button-class');
-    button.setAttribute('data-toggle', 'modal');
-    button.setAttribute('data-target', '#exampleModal');
+    button.classList.add("button-class");
+    button.setAttribute("data-toggle", "modal");
+    button.setAttribute("data-target", "#exampleModal");
 
     listPokemon.appendChild(button);
     pokemonList.appendChild(listPokemon);
 
-    button.addEventListener('click', function(event) {
+    button.addEventListener("click", function(event) {
       showDetails(pokemon);
     });
   }
@@ -81,9 +81,9 @@ let pokemonRepository = (function() {
   }
 
   function showModal(pokemon) {
-    let modalBody = $('.modal-body');
-    let modalTitle = $('.modal-title');
-    let modalHeader = $('.modal-header');
+    let modalBody = $(".modal-body");
+    let modalTitle = $(".modal-title");
+    let modalHeader = $(".modal-header");
     //let modalContainer = $("#modal-container");
     //clear existing contents of the modal
     //modalHeader.empty();
@@ -91,26 +91,26 @@ let pokemonRepository = (function() {
     modalBody.empty();
 
     //creating element for name in modal content
-    let nameElement = $('<h1>' + pokemon.name + '</h1>');
+    let nameElement = $("<h1>" + pokemon.name + "</h1>");
 
     //creating img in modal content
     let imageElementFront = $('<img class="modal-img" style="width:50%">');
-    imageElementFront.attr('src', pokemon.imageUrlFront);
+    imageElementFront.attr("src", pokemon.imageUrlFront);
 
     let imageElementBack = $('<img class="modal-img" style="width:50%">');
-    imageElementBack.attr('src', pokemon.imageUrlBack);
+    imageElementBack.attr("src", pokemon.imageUrlBack);
 
     //creating element for height in modal content
-    let heightElement = $('<p>' + 'Height : ' + pokemon.height + '</p>');
+    let heightElement = $("<p>" + "Height : " + pokemon.height + "</p>");
 
     //creating element for weightElement
-    let weightElement = $('<p>' + 'weight : ' + pokemon.weight + '</p>');
+    let weightElement = $("<p>" + "weight : " + pokemon.weight + "</p>");
 
     //creating element for categoryElement
-    let categoryElement = $('<p>' + 'Category : ' + pokemon.category + '</p>');
+    let categoryElement = $("<p>" + "Category : " + pokemon.category + "</p>");
 
     // Store types names as one string.
-    let typesAsString = '';
+    let typesAsString = "";
 
     if (pokemon.types) {
       for (let i = 0; i < pokemon.types.length; i++) {
@@ -118,13 +118,13 @@ let pokemonRepository = (function() {
 
         //Separate names with ", " if not the end of array
         if (pokemon.types.length !== i + 1) {
-          typesAsString = typesAsString + ', ';
+          typesAsString = typesAsString + ", ";
         }
       }
     }
 
     //creating element for type in modal content
-    let typesElement = $('<p>' + 'Types : ' + typesAsString + '</p>');
+    let typesElement = $("<p>" + "Types : " + typesAsString + "</p>");
 
     modalTitle.append(nameElement);
     modalBody.append(imageElementFront);
