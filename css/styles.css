@@ -1,3 +1,114 @@
+:root {
+  --bg-color: #d4efdf;
+  --dark-blue: #191970;
+}
+
+html,
+body {
+  background-color: var(--bg-color);
+  font-family: "georgia", serif;
+  color: var(--dark-blue);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+button {
+  text-decoration: underline;
+}
+
+.button-class {
+  background-color: #e6fcfa;
+  color: #17401f;
+  border: 2px solid black;
+  padding: 16px 32px;
+  font-size: 18px;
+  margin: 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: capitalize;
+  border-radius: 300px;
+  width: 200px;
+}
+
+.button-class:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.8;
+  background-color: green;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pokemon-logo {
+  width: 15%;
+  height: auto;
+  margin-top: 10px;
+}
+
+#pokemonModal {
+  border-width: 0px;
+  background: #fff;
+  background-color: transparent;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.modal-body,
+.modal-header {
+  background-color: #ffffe0;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+}
+
+header {
+  margin: 0 auto;
+  width: auto;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #ffffe0;
+  border-radius: 40px;
+}
+
+li.group-list-item {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .button-class {
     -webkit-writing-mode: horizontal-tb !important;
     color: #fff;
@@ -19,7 +130,7 @@
   border-radius: 0;
 }
 
-/* CSS FOR MODAl */
+//CSS FOR MODAl
 .modal-body {
   align-items: center;
   display: inline;
@@ -61,3 +172,4 @@ button:focus,
     align-items: center;
     justify-content: center;
 }
+*/
