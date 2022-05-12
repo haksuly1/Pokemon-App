@@ -29,29 +29,29 @@
   </p>
 
 <h3>Key Features</h3>
-<p> ● Load data from an external source (API)
-    ● View a list of items
+<p> ● Load data from an external source (API).<br>
+    ● View a list of items.<br>
     ● On user action (e.g., by clicking on a list item), view details for that item
 </p>
 
 <h3>Technical Requirements</h3>
-<p>Required:
-    ● The app must load data from an external API; for instance, the Pokémon API.
-    ● The app must display a list of items loaded from that API after the page is loaded.
+<p>Required:<br>
+    ● The app must load data from an external API; for instance, the Pokémon API.<br>
+    ● The app must display a list of items loaded from that API after the page is loaded.<br>
     ● The app must enable the viewing of more details for a given list item (like a Pokémon) on
       demand, such as when clicking on a list item.<br>
-    ● The app must have CSS styling.
-    ● The JavaScript code must be formatted according to ESLint rules.
-    ● The JavaScript code may be formatted via Prettier.
-    ● The JavaScript code may be manually formatted.
+    ● The app must have CSS styling.<br>
+    ● The JavaScript code must be formatted according to ESLint rules.<br>
+    ● The JavaScript code may be formatted via Prettier.<br>
+    ● The JavaScript code may be manually formatted.<br>
     ● The app must use at least one additional complex UI pattern, such as a modal, for
       details or touch interactions.<br>
-    ● The app may allow searching for items (e.g., searching for Pokémon).
-    ● The app must not throw any errors when being used.
+    ● The app may allow searching for items (e.g., searching for Pokémon).<br>
+    ● The app must not throw any errors when being used.<br>
     ● The app should be deployed to a publicly accessible platform like GitHub Pages (you
-      can review how to do this in Intro to Frontend Development's Exercise 10: Code <br>
-      Quality, Testing, & Web Hosting).
-    ● The app must work in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
+      can review how to do this in Intro to Frontend Development's Exercise 10: Code 
+      Quality, Testing, & Web Hosting).<br>
+    ● The app must work in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.<br>
     ● The app should show loading indicators while loading data.
 </body>
 </html>
